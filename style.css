@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: var(--text-color);
+    margin-left: 7%;
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: var(--text-color);
+    margin-left: 10%;
+}
+
+#check {
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: var(--base-color-second);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--text-color);
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--base-color-alt);
+    border-radius: 5px;
+}
+
+/*Variables*/
+:root {
+    --hue: 120;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 37% 30%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 58%);
+}
+
+.grupo:before,
+.grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: var(--text-color);
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type='text'],
+.campo input[type='email'],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background: var(--base-color-second);
+}
+.botao {
+    font-size: 1.2em;
+    background: var(--text-color-light);
+    border: 0;
+    margin-bottom: 1em;
+    color: var(--base-color);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: var(--base-color-alt);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao,
+select {
+    cursor: pointer;
+}
